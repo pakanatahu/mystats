@@ -1,0 +1,54 @@
+<div class="grid-container">
+    <div class="sidebar">
+  
+    </div>
+    <div class="content">
+        <mat-card id="a">
+            <mat-card-header>
+                <mat-card-title>
+                    Träning
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <img class="card-image" src="https://www.t-nation.com/system/publishing/articles/10005529/original/6-Reasons-You-Should-Never-Open-a-Gym.png?1509471214">
+              <mat-list role="list">
+                  <mat-list-item role="listitem" *ngFor="let category of woCategories">
+                        <span class="categoryItem">{{category.title}}</span>
+                        <span class="empty"></span>
+                        <span class="hours">{{category.hours}} hours;</span>
+                  </mat-list-item>
+              </mat-list>
+                
+            </mat-card-content>
+            <div class="card-buttons">
+                <button mat-button id="btnCategory">Ny kategori</button>
+            </div>
+                
+            </mat-card> 
+        <mat-card id="b">
+          <mat-card-header>
+              <mat-card-title>
+                  Systemutveckling
+              </mat-card-title>
+          </mat-card-header>
+            <img class="card-image"  src="http://www.keydesign.se/images/php.png">
+            <div class="card-buttons">
+                <button mat-button>Ny kategori</button>
+            </div>
+          </mat-card>  
+        <mat-card id="c">
+          <mat-card-header>
+              <mat-card-title>
+                  Övriga stats
+              </mat-card-title>
+          </mat-card-header>
+            <img class="card-image"  src="https://www.t-nation.com/system/publishing/articles/10005529/original/6-Reasons-You-Should-Never-Open-a-Gym.png?1509471214">
+            <div class="card-buttons">
+                <button mat-button>Ny kategori</button>
+            </div>
+            
+          </mat-card>   
+        </div>
+    </div>
+  
+  
